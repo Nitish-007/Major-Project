@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MajorProject" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!--        <style name="parent">-->
+        <!--            <item name="android:layout_width">match_parent</item>-->
+        <!--            <item name="android:layout_height">wrap_content</item> &lt;!&ndash; Corrected value &ndash;&gt;-->
+        <!--        </style>-->
+
+        <!--        <style name="modifiedEditText" parent="@style/parent"> &lt;!&ndash; Corrected parent reference &ndash;&gt;-->
+        <!--            <item name="android:textSize">@dimen/newsMoreTextSize</item>-->
+        <!--            <item name="android:backgroundTint">@color/primaryTextColor</item>-->
+        <!--        </style>-->
+    </style>
+
+    <style name="Theme.MajorProject" parent="Base.Theme.MajorProject" />
+
+    <style name="Theme.MajorProject.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MajorProject.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MajorProject.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

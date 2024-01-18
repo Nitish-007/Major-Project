@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".accountinfoactivity">
+
+    <!-- Main content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <!-- Include your custom toolbar layout here -->
+        <include layout="@layout/accountinfotoolbar" />
+
+        <!-- User Profile -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#37FF00E5"
+            android:background="@color/white">
+
+
+            <ImageView
+                android:id="@+id/profilePictureImageView"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/profile"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/userInfoCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profilePictureImageView"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="true"
+                        android:hint="Username">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/usernameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="John Doe"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="true"
+                        android:hint="Email">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/emailEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="johndoe@example.com"
+                            android:textSize="16sp"
+                            android:enabled="false"
+                            android:textColor="@color/black"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="true"
+                        android:hint="Address">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/addressEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="abcdabdress at abcd near abcd temple"
+                            android:textSize="16sp"
+                            android:enabled="false"
+                            android:textColor="@color/black"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="true"
+                        android:hint="Contact number">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/mobEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1234567897"
+                            android:textSize="16sp"
+                            android:enabled="false"
+                            android:textColor="@color/black"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:hintEnabled="true"
+                        android:hint="Date of Birth">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/dobEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="johndoe@example.com"
+                            android:textSize="16sp"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:clickable="false" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="start">
+
+
+        <include layout="@layout/nav_drawer" />
+
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

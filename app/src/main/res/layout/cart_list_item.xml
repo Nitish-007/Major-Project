@@ -1,0 +1,53 @@
+<!-- cart_list_item.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/cartProductImage"
+        android:layout_width="match_parent"
+        android:foregroundGravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher" />
+
+
+
+        <TextView
+            android:layout_below="@id/cartProductImage"
+            android:id="@+id/cartProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Product Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cartProductPrice"
+            android:layout_below="@id/cartProductName"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Price: $0.00"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cartProductQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity: 1"
+            android:textSize="14sp" />
+
+
+
+</RelativeLayout>
+
+
+
+    <!-- Action buttons can be added here (e.g., Remove, Edit Quantity) -->
+
+</LinearLayout>
